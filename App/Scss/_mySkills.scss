@@ -1,0 +1,184 @@
+//------my-skills-section-----//
+.my-skills {
+  padding: 50px 0;
+  position: relative;
+  .skills-content {
+    padding: 30px 0;
+    .skills-shape-pattern {
+      position: absolute;
+      right: 90px;
+      top: 5rem;
+      z-index: -1;
+      img {
+        opacity: 0.5;
+      }
+    }
+    .top-content {
+      padding: 10px 0;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .bottom-content {
+      padding: 30px 0;
+      .skills-left-content {
+        padding: 0px 20px;
+        .progressbar-content {
+          padding: 15px 15px;
+          .range__label {
+            transition: 2s solid;
+            p {
+              font-size: 15px;
+              margin-bottom: 0.5rem;
+            }
+          }
+
+          .range {
+            position: relative;
+            background-color: $background-color;
+            width: 100%;
+            height: 3px;
+            transform: skew(30deg);
+            border: 2px solid $black;
+            padding: 12px 0px;
+            font-size: 14px;
+
+            &:before {
+              --width: calc(var(--p) * 1%);
+
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 0;
+              height: 100%;
+              background-color: $primary-color;
+              transition: 2s solid;
+              z-index: 0;
+              animation: load 1s forwards linear, glitch 4s infinite linear;
+            }
+
+            &:after {
+              counter-reset: progress var(--p);
+              content: counter(progress) "%";
+              color: $white;
+              position: absolute;
+              left: 5%;
+              top: 50%;
+              transform: translateY(-50%) skewX(-30deg);
+              transition: 2s solid;
+              z-index: 1;
+            }
+          }
+
+          @keyframes load {
+            to {
+              width: var(--width);
+            }
+          }
+
+          @keyframes glitch {
+            0%,
+            5% {
+              transform: translate(0, 0);
+            }
+            1% {
+              transform: translate(-5%, -10%);
+            }
+            2% {
+              transform: translate(10%, 30%);
+            }
+            3% {
+              transform: translate(-43%, 10%);
+            }
+            4% {
+              transform: translate(2%, -23%);
+            }
+          }
+        }
+      }
+      .skills-right-content {
+        align-items: center;
+        padding: 20px 20px;
+        h1 {
+          font-weight: bolder;
+          text-align: center;
+          padding: 20px 0;
+          span {
+            color: $primary-color;
+          }
+        }
+        .btn-content {
+          padding: 20px 10px;
+          text-align: center;
+          .btn-CV {
+            a {
+              font-size: 15px;
+            }
+          }
+          .btn-freelancer {
+            a {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//--responsive----//
+
+@media (max-width: 900px) {
+  .my-skills {
+    .skills-content {
+      .skills-shape-pattern {
+        top: 2rem;
+        img {
+          opacity: 0.5;
+          width: 70px;
+        }
+      }
+
+      .bottom-content {
+        padding: 0px 0;
+        .skills-left-content {
+          padding: 0px 20px;
+          .progressbar-content {
+            padding: 15px;
+          }
+          .range {
+            font-size: 14px;
+          }
+        }
+        .skills-right-content {
+          align-items: center;
+          padding: 20px 20px;
+          h1 {
+            font-weight: bolder;
+            text-align: center;
+            padding: 20px 0;
+            line-height: 3rem;
+            span {
+              color: $primary-color;
+            }
+          }
+          .btn-content {
+            padding: 15px 10px;
+            text-align: center;
+            .btn-CV,
+            .btn-freelancer {
+              a {
+                font-size: 15px;
+                i {
+                  font-size: 20px;
+                  padding: 0 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

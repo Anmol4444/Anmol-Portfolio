@@ -1,0 +1,103 @@
+.preloader-container {
+  position: fixed;
+  justify-content: center;
+  width: 100%;
+  font-family: "Dancing Script", cursive;
+  height: 100%;
+  background: $secondary-color;
+  z-index: 70;
+}
+
+.preloader-container.active_new {
+  transform: translateY(-100vh);
+  transition: ease-in-out 2s;
+  transition-delay: 1s;
+}
+.preloader-text {
+  font-size: 90px;
+  /* opacity: 0; */
+  animation: fadeInLetter 0.2s forwards, scaleIn 1s forwards;
+  top: 40%;
+  // height: 100px;
+  position: absolute;
+  width: 100%;
+  /* left: 50%; */
+  margin: auto;
+  text-align: center;
+}
+
+/* Animation for individual letters */
+.preloader-text span {
+  opacity: 0;
+  color: $black;
+  animation: topToBottom 10s forwards;
+  transform-origin: center; /* Set the transform origin to the center of each letter */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLetter {
+  0% {
+    opacity: 0;
+    transform: scale(0.8); /* Start with a slightly smaller scale */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* End with the original scale */
+  }
+}
+
+@keyframes topToBottom {
+  0% {
+    transform: translateY(-100%); /* Start position above the viewport */
+  }
+  100% {
+    transform: translateY(0); /* End position at the center of the viewport */
+  }
+}
+
+/* Add scale-in animation */
+@keyframes scaleIn {
+  0% {
+    transform: scale(0.8); /* Start with a slightly smaller scale */
+  }
+  100% {
+    transform: scale(1); /* End with the original scale */
+  }
+}
+
+/* Add fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Add expandWidth animation */
+@keyframes expandWidth {
+  0% {
+    width: auto; /* Start with auto width */
+  }
+  100% {
+    width: 100%; /* End with full width */
+
+    letter-spacing: 20px;
+  }
+}
+
+//----responsive----//
+@media (max-width: 900px) {
+  .preloader-text {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,136 @@
+//-------mobile-app-develop-----//
+
+.mobile-app-cover {
+  position: relative;
+  .mobile-app {
+    .mobile-app-content {
+      padding: 140px 15px;
+      .pattern-react-native {
+        position: absolute;
+        bottom: 45rem;
+        z-index: -1;
+        right: 120px;
+
+        img {
+          width: 100%;
+          animation: bubbleMover2 linear infinite 5s;
+        }
+      }
+    }
+
+    .left-content {
+      align-items: center;
+
+      .left-content-title {
+        padding: 0;
+        margin: 0;
+        h1 {
+          font-weight: 900;
+          font-size: 50px;
+          font-style: bold;
+          padding: 0;
+          margin: 0;
+          text-align: left;
+
+          color: $primary-color;
+        }
+      }
+      .myInfo {
+        padding: 25px 0px;
+        p {
+          justify-items: center;
+          font-size: 15px;
+          span {
+            color: black;
+            font-style: italic;
+            font-weight: 600;
+          }
+        }
+        .btn3 {
+          background-color: $primary-color;
+          padding: 10px 0;
+          margin: 20px 10px;
+          a {
+            color: $white;
+
+            i {
+              padding: 0 5px;
+            }
+          }
+          &:hover {
+            animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both
+              infinite;
+            transform: translate3d(0, 0, 0);
+          }
+        }
+      }
+    }
+
+    .right-content {
+      padding: 20px 40px;
+      .right-content-title {
+        align-items: center;
+        max-width: fit-content;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+//-----resnsponsive----//
+
+@media (max-width: 900px) {
+  .mobile-app-cover {
+    .mobile-app {
+      .mobile-app-content {
+        padding: 100px 15px;
+        .pattern-react-native {
+          position: absolute;
+          top: 4rem;
+          z-index: -1;
+          right: 80px;
+
+          img {
+            width: 110px;
+          }
+        }
+      }
+      .left-content {
+        align-items: center;
+        .left-content-title {
+          h1 {
+            font-size: 35px;
+          }
+        }
+        .myInfo {
+          padding: 25px 0px;
+          p {
+            justify-items: center;
+            font-size: 15px;
+          }
+          .sub-info {
+            ul li {
+              padding-top: 20px;
+
+              .text {
+                h6 {
+                  font-size: 18px;
+                }
+                p {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .right-content {
+        padding: 20px 40px;
+      }
+    }
+  }
+}

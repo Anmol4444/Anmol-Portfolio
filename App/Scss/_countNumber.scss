@@ -1,0 +1,80 @@
+//--counter---//
+.count-number {
+  background: $primary-color;
+  position: relative;
+  .pattern-count-left {
+    position: absolute;
+    transform: scaleX(-1);
+    width: 320px;
+    img {
+      width: 100%;
+
+      opacity: 0.3;
+    }
+  }
+  .pattern-count-right {
+    position: absolute;
+    width: 320px;
+    right: 0px;
+    img {
+      width: 100%;
+
+      opacity: 0.3;
+    }
+  }
+  .counter-content {
+    padding: 40px 0;
+    .box {
+      padding: 20px;
+    }
+
+    .counter {
+      color: $white;
+      text-align: center;
+      padding: 20px 0;
+      h3 {
+        font-size: 25px;
+        font-weight: 500;
+        color: $white;
+      }
+      .counter-content-inside {
+        .counter-value {
+          font-weight: 400;
+          font-size: 100px;
+        }
+        p {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
+
+//-----resnsponsive----//
+
+@media (max-width: 900px) {
+  .count-number {
+    .pattern-count-right {
+      right: 0px;
+      top: 25rem;
+    }
+    .counter-content {
+      padding: 40px 0;
+
+      .counter {
+        padding: 10px 0;
+        h3 {
+          font-size: 25px;
+        }
+        .counter-content-inside {
+          .counter-value {
+            font-size: 80px;
+          }
+          p {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

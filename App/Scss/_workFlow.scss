@@ -1,0 +1,143 @@
+//---working-process---//
+.workflow {
+  position: relative;
+  background: linear-gradient(#ff580a, #f8876d);
+
+  .workflow-effect {
+    position: absolute;
+    align-items: center;
+    top: 10rem;
+
+    img {
+      z-index: -1;
+      animation: rotate-animation 44s infinite linear;
+    }
+    @keyframes rotate-animation {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .workflow-content {
+    padding: 80px 0;
+    .main-header-number-for-working-process {
+      padding: 20px 0px;
+      font-family: "Dosis", sans-serif;
+      color: $white;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 90px;
+    }
+
+    .workflow-title {
+      text-align: center;
+      color: white;
+      font-weight: bolder;
+      font-size: 60px;
+      position: relative;
+    }
+
+    .workflow-info-content {
+      padding: 40px 0;
+
+      .flow {
+        padding: 10px;
+
+        .workflow-card-body {
+          padding: 30px 20px;
+          .workflow-card-title {
+            color: $primary-color;
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center;
+          }
+          .background-number {
+            color: $secondary-color;
+            font-weight: bolder;
+            position: absolute;
+            font-size: 180px;
+            z-index: -1;
+            right: 2rem;
+            bottom: 1.5rem;
+          }
+          .work-flow-para {
+            color: $sub-paragraph;
+            font-size: 15px;
+            font-weight: 400;
+          }
+          .workflow-card-text {
+            color: $sub-header;
+            font-size: 15px;
+            li {
+              text-decoration: none;
+              line-height: 2em;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .workflow {
+    .workflow-effect {
+      top: 17rem;
+      left: 5rem;
+      img {
+        width: 240px;
+      }
+    }
+
+    .workflow-content {
+      padding: 50px 0;
+      .main-header-number-for-working-process {
+        padding: 20px 0px;
+        font-size: 90px;
+      }
+      .workflow-title {
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+        font-size: 40px;
+        line-height: 4rem;
+        position: relative;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .workflow {
+    .workflow-effect {
+      top: 17rem;
+      left: 5rem;
+      img {
+        width: 200px;
+      }
+    }
+
+    .workflow-content {
+      padding: 50px 0;
+      .main-header-number-for-working-process {
+        padding: 20px 0px;
+        font-size: 90px;
+      }
+      .workflow-title {
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+        font-size: 40px;
+        line-height: 4rem;
+        position: relative;
+      }
+    }
+  }
+}

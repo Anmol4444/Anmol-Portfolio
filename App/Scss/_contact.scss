@@ -1,0 +1,348 @@
+//---contact---//
+.contact {
+  .contact-outside-content {
+    padding: 70px 0;
+    // width: 100%;
+    .contact-inside-content {
+      .ribbon {
+        color: $white;
+        background: $background-color;
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        padding: 0 10px;
+        width: 100%;
+        .contact-header {
+          h1 {
+            color: $sub-black;
+            text-align: center;
+            padding: 50px 0;
+            font-size: 50px;
+            font-weight: 700;
+            span {
+              color: $primary-color;
+            }
+          }
+        }
+        .inside-content-info {
+          text-align: justify;
+          padding: 10px 30px;
+          .contact-info-left {
+            font-size: 18px;
+            color: $contact-sub-header;
+            padding: 5px 20px;
+            font-weight: 400;
+            .personal-info {
+              .text {
+                padding: 10px 0;
+                h6 {
+                  font-weight: 600;
+                  font-size: 20px;
+                  color: $contact-sub-header;
+                }
+                a {
+                  font-weight: 800;
+                  color: $primary-color;
+                  font-size: 15px;
+                  text-decoration: none;
+                }
+              }
+              .icon {
+                padding-top: 10px;
+              }
+              img {
+                height: 50px;
+                width: 50px;
+              }
+            }
+          }
+          .contact-info-right {
+            padding: 0 30px;
+            form {
+              justify-content: center;
+
+              .change {
+                display: flex;
+                flex-wrap: wrap;
+              }
+            }
+            .form-label {
+              color: $contact-sub-header;
+              font-weight: 400;
+              font-size: 15px;
+            }
+            .form-control {
+              padding: 15px;
+              border: none;
+              border-radius: 10px;
+            }
+            ::placeholder {
+              color: $placeholer-color;
+              font-weight: 400;
+              padding: 5px;
+            }
+            .contact-top {
+              .top {
+                justify-content: space-around;
+                padding: 0 15px;
+              }
+            }
+            input:focus {
+              outline: 0 !important;
+              box-shadow: none !important;
+            }
+            .contact-down {
+              padding: 0 10px;
+            }
+            .contact-bottom {
+              max-width: 300px;
+              margin: 30px 0;
+              padding: 0 10px;
+            }
+            .btn-13 {
+              background-color: $primary-color;
+              border-radius: 10px;
+              width: 100%;
+              text-align: center;
+              line-height: 1.5;
+              text-decoration: none;
+              border: 2px solid $primary-color;
+              color: $white;
+              font-weight: 600;
+              cursor: pointer;
+              user-select: none;
+              padding: 0.575rem 0.75rem;
+              i {
+                color: $white;
+                padding: 0 10px;
+              }
+
+              &:hover {
+                border: 2px solid $primary-color;
+                background-color: $white;
+                color: $primary-color;
+                i {
+                  color: $primary-color;
+                }
+              }
+
+              a {
+                font-size: 18px;
+                text-align: center;
+                font-weight: 600;
+                text-align: center;
+                color: $white;
+                text-decoration: none;
+
+                &:hover {
+                  color: red;
+                }
+              }
+            }
+          }
+        }
+        &:before {
+          content: "";
+          background: linear-gradient(
+            to top right,
+            ($primary-color) 49%,
+            transparent 50%
+          );
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top: -15px;
+          right: 50px;
+        }
+        .inside {
+          background-color: $primary-color;
+          position: relative;
+          padding: 30px;
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
+          position: absolute;
+          top: 0;
+          right: 65px;
+          margin: -15px 0 0;
+          img {
+            width: 60px;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+//----responsive----//
+@media (max-width: 900px) {
+  .contact {
+    .contact-outside-content {
+      .contact-inside-content {
+        width: 100%;
+        .ribbon {
+          font-size: 14px;
+          padding: 0 10px;
+          // margin: 10px 10px;
+          width: 100%;
+
+          &:before {
+            content: "";
+            background: linear-gradient(
+              to top right,
+              ($primary-color) 49%,
+              transparent 50%
+            );
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: -15px;
+            right: 30px;
+          }
+          .inside {
+            background-color: $primary-color;
+            position: relative;
+            padding: 20px 15px;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
+            position: absolute;
+            top: 0;
+            right: 45px;
+            margin: -15px 0 0;
+            img {
+              width: 30px;
+              margin-bottom: 0.8rem;
+            }
+          }
+          .contact-header {
+            padding-top: 20px;
+
+            h1 {
+              color: $sub-black;
+              text-align: center;
+              font-size: 30px;
+              font-weight: 700;
+              line-height: 3rem;
+              span {
+                color: $primary-color;
+              }
+            }
+          }
+          .inside-content-info {
+            text-align: left;
+            padding: 10px 10px;
+
+            .contact-info-left {
+              font-size: 15px;
+              color: $contact-sub-header;
+              padding: 5px 20px;
+              font-weight: 400;
+              .personal-info {
+                h6 {
+                  font-weight: 600;
+                  font-size: 15px;
+                  color: $contact-sub-header;
+                }
+                a {
+                  font-weight: 800;
+                  color: $primary-color !important;
+                  font-size: 15px;
+                  text-decoration: none;
+                }
+                .icon {
+                  padding-top: 10px;
+                }
+                img {
+                  height: 30px;
+                  width: 30px;
+                }
+              }
+            }
+            .contact-info-right {
+              padding: 0 0px;
+              form {
+                justify-content: center;
+
+                .change {
+                  display: flex;
+                  flex-wrap: wrap;
+                }
+              }
+              .form-label {
+                color: $contact-sub-header;
+                font-weight: 400;
+                font-size: 15px;
+              }
+              .form-control {
+                padding: 10px;
+                border: none;
+                border-radius: 10px;
+              }
+              ::placeholder {
+                color: $placeholer-color;
+                font-weight: 400;
+                padding: 5px;
+                font-size: 15px;
+              }
+              .contact-top {
+                .top {
+                  justify-content: space-around;
+                  padding: 0 15px;
+                }
+              }
+              input:focus {
+                outline: 0 !important;
+                box-shadow: none !important;
+              }
+              .contact-down {
+                padding: 0 10px;
+              }
+              .contact-bottom {
+                max-width: 300px;
+                margin: 30px 0;
+                padding: 0 10px;
+              }
+              .btn-13 {
+                background-color: $primary-color;
+                border-radius: 10px;
+                width: 100%;
+                text-align: center;
+                line-height: 1.5;
+                text-decoration: none;
+                border: 2px solid $primary-color;
+                color: $white;
+                font-weight: 600;
+                cursor: pointer;
+                user-select: none;
+                padding: 0.575rem 0.75rem;
+                i {
+                  color: $white;
+                  padding: 0 10px;
+                }
+
+                &:hover {
+                  border: 2px solid $primary-color;
+                  background-color: $white;
+                  color: $primary-color;
+                  i {
+                    color: $primary-color;
+                  }
+                }
+
+                a {
+                  font-size: 18px;
+                  text-align: center;
+                  font-weight: 600;
+                  text-align: center;
+                  color: $white;
+                  text-decoration: none;
+
+                  &:hover {
+                    color: red;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

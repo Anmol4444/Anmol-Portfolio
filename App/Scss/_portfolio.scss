@@ -1,0 +1,211 @@
+//------portfolio-section-----//
+.portfolio {
+  overflow: hidden;
+  padding: 70px 0;
+
+  .portfolio-all-data {
+    .nav-item {
+      padding: 0 25px;
+    }
+    .nav-link {
+      color: $black;
+      font-size: 18px;
+    }
+    .nav-link.active {
+      background-color: $primary-color;
+      color: $white;
+      transition: 0.8s ease-in-out;
+    }
+    .web-design-tab-content {
+      padding: 10px 0;
+      ul li {
+        text-decoration: none;
+        list-style: none;
+      }
+    }
+    .portfolio-box {
+      padding: 10px 0;
+    }
+    .portfolio-box-content {
+      border: 2px solid $primary-color;
+      border-width: 4px;
+      // box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      height: 400px;
+      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
+      margin: 12px 15px;
+      overflow: hidden;
+      img {
+        object-position: top;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 15s;
+      }
+      img:hover {
+        object-position: bottom;
+      }
+    }
+    .box-title {
+      text-align: center;
+      padding: 10px;
+      font-weight: 400;
+    }
+    .pagination-container {
+      padding-bottom: 50px;
+      .pagination {
+        margin: auto;
+        max-width: 350px;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $primary-color;
+        // background-color: $primary-color;
+        // padding: 10px 10px;
+
+        a {
+          padding: 9px 18px;
+          font-weight: 500;
+          text-decoration: none;
+          font-size: 18px;
+          color: $primary-color;
+          transition: 0.5s ease-in-out;
+        }
+
+        .control {
+          font-size: 15px;
+          font-weight: bold;
+          background-color: transparent;
+          color: $primary-color;
+          border: none;
+          cursor: pointer;
+          padding: 10px 20px;
+          transition: 0.5s ease-in-out;
+        }
+        a.active {
+          background-color: $primary-color;
+          color: white;
+        }
+      }
+    }
+
+    .control:not(.disabled):hover,
+    .pageNumbers a:hover {
+      background-color: $primary-color;
+      overflow: hidden;
+      color: white;
+    }
+
+    .hidden {
+      display: none;
+      overflow: hidden;
+    }
+  }
+
+  //-----ui-ux-box-desing--------//
+
+  .ui-ux-design-tab {
+    padding: 20px 0;
+    .ui-ux-box-design {
+      border: 2px solid $primary-color;
+      border-width: 4px;
+      // height: 300px;
+      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
+      margin: 12px 15px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  //----logo-box-design----//
+  .logo-design-tab {
+    padding: 20px 0;
+    .logo-box-design {
+      border: 2px solid $primary-color;
+      border-width: 3px;
+      height: 300px;
+      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
+      margin: 12px 15px;
+      img {
+        padding: 50px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  //----photogrphy-box-design----//
+  .photographyTab {
+    padding: 20px 0;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 5vw);
+      grid-gap: 10px;
+    }
+
+    .gallery__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .gallery__item--1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    .gallery__item--2 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    .gallery__item--3 {
+      grid-column-start: 5;
+      grid-column-end: 9;
+      grid-row-start: 1;
+      grid-row-end: 6;
+    }
+
+    .gallery__item--4 {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 6;
+    }
+
+    .gallery__item--5 {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 6;
+      grid-row-end: 9;
+    }
+
+    .gallery__item--6 {
+      grid-column-start: 5;
+      grid-column-end: 9;
+      grid-row-start: 6;
+      grid-row-end: 9;
+    }
+
+    #gallery-modal {
+      .modal-content {
+        .modal-header .btn-close {
+          background-color: $primary-color;
+          color: white;
+        }
+      }
+
+      .modal-img {
+        width: 100%;
+      }
+    }
+  }
+}

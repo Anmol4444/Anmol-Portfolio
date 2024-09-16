@@ -1,0 +1,29 @@
+//-------------my-resume-section------//
+.my-resume {
+  background-color: $background-color;
+  padding: 80px 0;
+
+  .resume-content {
+    .resume {
+      padding: 0 40px;
+    }
+    .content-resume {
+      padding: 30px 0;
+    }
+  }
+}
+
+//--responsive----//
+
+@media (max-width: 900px) {
+  .my-resume {
+    .resume-content {
+      .resume {
+        padding: 0 40px;
+      }
+      .content-resume {
+        padding: 10px 0;
+      }
+    }
+  }
+}

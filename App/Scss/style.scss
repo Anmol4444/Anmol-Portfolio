@@ -1,0 +1,42 @@
+@import "_var.scss";
+@import "_commonStyle.scss";
+@import "_hamburger.scss";
+@import "_navBar.scss";
+@import "_cursorPointer.scss";
+@import "_arrowToTop.scss";
+@import "_banner.scss";
+@import "_services.scss";
+@import "_portfolio.scss";
+@import "_myResume.scss";
+@import "_mySkills.scss";
+@import "_countNumber.scss";
+@import "_contact.scss";
+@import "_footer.scss";
+@import "preLoader.scss";
+@import "_mobileAppCover.scss";
+@import "_workFlow.scss";
+@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+//---------------body-section------------//
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.row {
+  --bs-gutter-x: 0px;
+}
+
+body {
+  font-family: "Andika", sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+}
+
+.banner-cover {
+  max-width: 1350px;
+  margin: auto;
+}

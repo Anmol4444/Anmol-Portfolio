@@ -1,0 +1,127 @@
+//---footer----//
+.footer {
+  background-color: $sub-black;
+  padding-top: 70px;
+  position: relative;
+  width: 100%;
+  .inside-footer {
+    margin: auto;
+    max-width: 1300px;
+    padding: 10px 20px;
+    .footer-pattern {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      img {
+        opacity: 0.2;
+      }
+    }
+
+    .footer-col {
+      padding: 20px 0;
+      position: relative;
+      ul {
+        display: block;
+        li {
+          list-style: none;
+
+          a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            line-height: 2.3rem;
+            color: #bbbbbb;
+            display: block;
+            &:hover {
+              color: $primary-color;
+              padding-left: 2px;
+            }
+          }
+        }
+      }
+      p {
+        color: $footer-sub-header;
+        line-height: 2rem;
+        font-size: 16px;
+      }
+      .leftside-footer-img {
+        img {
+          width: 200px;
+        }
+      }
+      .leftside-footer-quotation {
+        padding: 10px 0;
+        img {
+          width: 20px;
+        }
+        p {
+          // font-family: "Dancing Script", cursive;
+          font-size: 20px;
+          color: $white;
+          padding: 10px 0;
+        }
+      }
+
+      h4 {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          background-color: $primary-color;
+          height: 2px;
+          box-sizing: border-box;
+          width: 50px;
+        }
+      }
+      .social-links a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: $footer-social-link;
+        text-align: center;
+        line-height: 33px;
+        border-radius: 50%;
+        color: $white;
+        transition: all 0.5s ease;
+        padding-top: 2px;
+        margin: 5px 1px;
+        &:hover {
+          color: white;
+          background-color: $primary-color;
+          border-width: 2px;
+        }
+        i {
+          font-size: 17px;
+        }
+      }
+    }
+    .hr {
+      display: block;
+      border: 0;
+      border-top: 1px solid $footer-sub-header;
+      margin: 10px 0;
+    }
+    .footer-bottom {
+      text-align: center;
+      font-size: 16px;
+      padding: 20px 0;
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+}
